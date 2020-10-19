@@ -1,0 +1,393 @@
+@font-face { font-family: 'Knockout-HTF27-JuniorBantamwt';  src: local('Knockout-HTF27-JuniorBantamwt'), url('https://nomail.com.ua/files/woff/cc03949211959d16892398c648337aef.woff') format('woff'); }
+
+@font-face { font-family: 'GothamCondensed-Book';  src: local('GothamCondensed-Book'), url('https://nomail.com.ua/files/woff/5daf09fb0b0ff9497ae2e755b9bc5ea0.woff') format('woff'); }
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body {
+    font-family:'Knockout-HTF27-JuniorBantamwt';
+    font-size: 100%;
+    min-width: 340px;
+}
+
+header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-item img {
+    filter: contrast(80%) brightness(50%);
+    height: 100vh;
+    object-fit: cover;
+}
+
+#carousel a {
+    height: 250px;
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding-left: 40px;
+    padding-right: 40px;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    font-size: 1.3em;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.form-inline a {
+    border-radius: 41px;
+    font-size: 1.18em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 15px;
+}
+
+
+.form-inline {
+    border: 2px solid white;
+    border-radius: 45px;
+    padding: 5px;
+}
+
+.carousel-caption h1 {
+    text-transform: uppercase;
+    font-size: 5em;
+}
+
+.carousel-caption p {
+    font-size: 2em;
+    font-family:'GothamCondensed-Book';
+}
+
+.modal-body {
+    height: 80%;
+    box-shadow: 0 0 30px 10px black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal-body input {
+    font-family: 'Bebas Neue' !important;
+    font-size: 16px !important;
+}
+
+.caption {
+    line-height: 0.2;
+}
+
+.caption h1 {
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+.caption p {
+    font-size: 1.5em;
+
+}
+.form-modal .form-control {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+
+.modal-body button {
+    margin-top: 70px;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.sign-up-link {
+    font-size: 30px;
+}
+#navbarDropdown {
+    text-transform: none;
+    line-height: 100%;
+}
+
+.dropdown-menu {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#aboutBody {
+    background-image: url(https://img4.goodfon.ru/wallpaper/nbig/5/b6/chb-fotografiia-skaly-gory-sneg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: contrast(80%) brightness(50%);
+}
+
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+#aboutHeader {
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    background-color: #ecebeb;
+    border-radius: 12px;
+    box-shadow: 0 0 30px 10px black;
+}
+
+.description h1 {
+    font-size: 3em;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#phone {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.authors, .social {
+    line-height: 1.3em;
+}
+
+
+.aboutInfo h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.description p, .info-block, #community-header, #rate-add, #rate-add input, #rate-add textarea, .rates {
+    line-height: normal;
+    font-family: 'Bebas Neue';
+    font-size: 1.3em;
+}
+
+#rate-add .btn {
+    font-size: 1.5rem ;
+}
+
+#rate-add textarea, #rate-add input {
+    font-size: 1em;
+}
+
+.description p {
+    font-size: 1.5em;
+}
+
+#community-header h2, .aboutInfo .btn {
+    font-family:'Knockout-HTF27-JuniorBantamwt';
+}
+
+.aboutInfo {
+    margin: 25px 10px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#map {
+    width: 100%;
+}
+
+#iconicDropdown {
+    display: none;
+}
+
+.info-block {
+    margin: 30px 0px;
+}
+
+.address {
+    margin-top: 30px;
+}
+
+.rights {
+    text-align: center;
+    font-size: 20px;
+}
+
+#rate-add {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+#rate-add .form-control {
+    margin-bottom: 10px;
+}
+
+#radio {
+    display: flow-root;
+}
+
+#radio p {
+    margin-bottom: 0.3rem;
+}
+
+#radio-button {
+    float: left;
+}
+
+#radio-button:not(:checked) > input {
+    display: none;
+}
+
+#radio-button:not(:checked) > label {
+	float: right;
+	width: 42px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+
+#radio-button:not(:checked) > label:before {
+	content: '★';
+}
+
+#radio-button > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+
+#radio-button:not(:checked) > label:hover,
+#radio-button:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+#radio-button > input:checked + label:hover,
+#radio-button > input:checked + label:hover ~ label,
+#radio-button > input:checked ~ label:hover,
+#radio-button > input:checked ~ label:hover ~ label,
+#radio-button > label:hover ~ input:checked ~ label {
+	color: gold;
+    text-shadow: 1px 1px goldenrod;
+}
+#radio-button > label:active {
+	position: relative;
+}
+
+.post {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 1px black;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.post-info {
+    margin-left: 10px;
+    width: 100%;
+}
+
+#title {
+    margin: 0.4em 0;
+}
+
+#post-date {
+    float: right;
+    margin-right: 0.1rem;
+    font-size: 1rem;
+}
+
+.rating-mini {
+	display: inline-block;
+    font-size: 0;
+    margin-bottom: 1rem;
+}
+.rating-mini span {
+	padding: 0;
+	font-size: 20px;
+	line-height: 1;
+	color: lightgrey;
+}
+.rating-mini > span:before {
+	content: '★';
+}
+.rating-mini > span.active {
+	color: gold;
+}
+
+.post-text {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    line-height: normal;
+}
+
+.author-info {
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+
+}
+
+.author-info div {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.author-pic {
+    border: 1px solid #ccc;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: auto;
+}
+
+.aboutInfo .btn {
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.like-div {
+    margin: 1rem 1rem 0 0;
+    float: right;
+}
+
+
+.aboutInfo > * {
+    padding: 10px 0px;
+    line-height: 10px;
+}
+
+#communityBody {
+    background-image: url(https://images.wallpaperscraft.ru/image/gory_pejzazh_chb_144230_1920x1080.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: contrast(80%) brightness(50%);
+    height: 100%;
+}
+
+#login-failure, #signUp-failure {
+    font-size: 25px;
+}

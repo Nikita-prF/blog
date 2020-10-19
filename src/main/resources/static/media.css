@@ -1,0 +1,129 @@
+header, .modal-fade {
+    font-size: 1.2rem !important;
+}
+.navbar-brand {
+    font-size: 2rem !important;
+    margin-right: unset;
+}
+
+.nav-link {
+    font-size: 1em;
+}
+
+
+@media all and (max-width: 760px) {
+    
+
+    .container {
+        font-size: 70% !important;
+        width: 90% !important;
+    }
+
+    .like-div {
+        margin-bottom: 0.5rem;
+    }
+
+    #communityBody .aboutInfo {
+        margin: 20px 0px;
+    }
+
+    #post-date {
+        font-size: 80%;
+    }
+
+    .rates p {
+        margin-bottom: 0.5rem;
+    }
+
+    .author-info {
+        border: none;
+        display: flex;
+    }
+
+
+    .author-info div {
+        text-align: left;
+        margin-left: 2px;
+        margin-top: 1em;
+    }
+
+    .author-pic {
+        width: 10%;
+        height: 10%;
+        margin: 5px !important;
+    }
+
+
+    .post {
+        flex-direction: column;
+        padding: 2px;
+    }
+
+    .post-text {
+        padding: 4px;
+    }
+
+    .post-info {
+        margin-left: 0;
+        padding: 2px;
+    }
+
+
+
+    .contacts {
+        flex-direction: column;
+    }
+
+    .contacts > div {
+        margin-bottom: 1.5rem;
+    }
+
+    .social {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .authors {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .modal-dialog {
+        margin-top: 30%;
+    }
+}
+
+@media all and (max-width: 425px) {
+    header, .modal-fade {
+        font-size: 1rem !important;
+    }
+
+    .navbar {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .navbar-brand {
+        font-size: 2rem !important;
+        margin-right: unset;
+    }
+
+    .nav-link {
+        font-size: 1em !important;
+    }
+    .form-inline a.btn {
+        line-height: normal !important;
+        padding: 10px !important;
+
+        font-size: 1.2rem !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 4rem !important;
+    }
+    
+    .carousel-caption p {
+        font-size: 1.8rem !important;
+    }
+
+}

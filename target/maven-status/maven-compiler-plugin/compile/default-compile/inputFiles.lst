@@ -1,0 +1,16 @@
+/home/nikita/projects/blog/src/main/java/com/example/blog/repo/UserRepository.java
+/home/nikita/projects/blog/src/main/java/com/example/blog/BlogApplication.java
+/home/nikita/projects/blog/src/main/java/com/example/blog/repo/RoleRepository.java
+/home/nikita/projects/blog/src/main/java/com/example/blog/controllers/MainController.java
+/home/nikita/projects/blog/src/main/java/com/example/blog/models/ERole.java
+/home/nikita/projects/blog/src/main/java/com/example/blog/services/UserDetailServiceImpl.java
+/home/nikita/projects/blog/src/main/java/com/example/blog/repo/PostRepository.java
+/home/nikita/projects/blog/src/main/java/com/example/blog/services/CustomAuthFailureHandler.java
+/home/nikita/projects/blog/src/main/java/com/example/blog/config/WebSecurityConfig.java
+/home/nikita/projects/blog/src/main/java/com/example/blog/models/User.java
+/home/nikita/projects/blog/src/main/java/com/example/blog/config/MvcConfig.java
+/home/nikita/projects/blog/src/main/java/com/example/blog/models/Post.java
+/home/nikita/projects/blog/src/main/java/com/example/blog/services/CustomLogoutSuccessHandler.java
+/home/nikita/projects/blog/src/main/java/com/example/blog/controllers/UserController.java
+/home/nikita/projects/blog/src/main/java/com/example/blog/models/Role.java
+/home/nikita/projects/blog/src/main/java/com/example/blog/controllers/BlogController.java

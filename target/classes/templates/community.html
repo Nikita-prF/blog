@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Community</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/style.css" th:href="@{/style.css}">
+    <link rel="stylesheet" href="../static/media.css" th:href="@{/media.css}" media="all and (max-width: 600px)">
+</head>
+<body id="communityBody">
+
+<div id="wrapper">
+    <!--header and modal form-->
+
+    <header id="aboutHeader" th:insert="blocks/header :: navbar"></header>
+    <div th:insert="blocks/header :: modals"></div>
+
+    <div class="container">
+        <div class="aboutInfo">
+            <div class="description">
+                <h1>Mountain</h1>
+                <p>This page is a place for community conversation. Registered users can leave feedback and ratings.
+                </p>
+            </div>
+            <div id="community-header">
+                <h2>Community</h2>
+                <p sec:authorize="isAuthenticated()">Please tell us what you think about our product</p>
+                <div class="alert alert-warning" sec:authorize="!isAuthenticated()">Please log in for posting messages.</div>
+            </div>
+            <form sec:authorize="isAuthenticated()" id="rate-add" th:action="@{/community}" method="post">
+                <input type="text" name="title" placeholder="add title" class="form-control">
+                <textarea name="full_text" placeholder="add post text" class="form-control"></textarea>
+                <div id="radio">
+                    <p>Please rate us:</p>
+                    <div id="radio-button">
+                        <input type="radio" id="rate5" name="rate" value="5">
+                        <label for="rate5" title="Excellent"></label>
+                        <input type="radio" id="rate4" name="rate" value="4">
+                        <label for="rate4" title="Good"></label>
+                        <input type="radio" id="rate3" name="rate" value="3">
+                        <label for="rate3" title="OK"></label>
+                        <input type="radio" id="rate2" name="rate" value="2">
+                        <label for="rate2" title="Poor"></label>
+                        <input type="radio" id="rate1" name="rate" value="1">
+                        <label for="rate1" title="Very bad"></label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-dark">Add post</button>
+            </form>
+            <div class="rates" th:if="${!posts.isEmpty()}" th:each="elem : ${posts}">
+                <div class="post">
+                    <div class="author-info">
+                        <img class="author-pic mx-auto" th:src="${elem.authorImg == 'null'} ? @{http://hxd3.de/wp-content/plugins/slider-hero/images/noimage.png} : ${elem.authorImg}"></img>
+                        <div th:text="${elem.author}"/>
+                    </div>
+                    <div class="post-info">
+                        <div class="post-header">
+                            <p id="title" th:text="${elem.title}"/>
+                            <div class="text-muted" id="post-date" th:text="${elem.date}"/>
+                            <div id="post-rate" class="d-none" th:text="${elem.rate}"/>
+                            <div class="rating-mini">
+                                <span id="rate-star1"></span>
+                                <span id="rate-star2"></span>
+                                <span id="rate-star3"></span>
+                                <span id="rate-star4"></span>
+                                <span id="rate-star5"></span>
+                            </div>
+                        </div>
+                        <div class="post-text">
+                            <p th:text="${elem.full_text}"/>
+                        </div>
+                        <div class="like-div">
+                            <span id="likes" th:text="${elem.likes}"></span>
+                                <a id="like" th:href="${elem.id} + '/like'">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/></svg>
+                                </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="rates" th:unless="${!posts.isEmpty()}">
+                <p class="text-muted">There are no posts yet..</p>
+                <p class="text-muted">Be first!</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/hammerjs/2.0.8/hammer.min.js"></script>
+<script src="../static/scr.js" th:src="@{/scr.js}"></script>
+</body>
+</html>
