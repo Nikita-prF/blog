@@ -77,6 +77,10 @@ a special 'no photo' picture for users who have not yet installed their photos.
 * It is necessary to improve the adaptability of some graphic elements and fonts - the view 
 on small screens was far from perfect.
 
+* In the future, I will also need to implement pagination on the community page for comfortable and customizable display of posts. 
+
+* There is a problem with displaying posts, when a new published post is added to the end of the list. Pagination should solve this problem too.
+
 ## Built with
 
 * [Spring Boot](https://spring.io/)
