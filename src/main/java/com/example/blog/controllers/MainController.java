@@ -15,7 +15,7 @@ public class MainController {
 
     @GetMapping("/")
     public String home() {
-        return "new";
+        return "home";
     }
 
     @GetMapping("/about")
